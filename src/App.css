@@ -1,0 +1,70 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100svh;
+  padding: 48px 24px;
+  box-sizing: border-box;
+}
+
+.nav {
+  margin-bottom: 48px;
+}
+
+/* Pill toggle */
+.toggle {
+  position: relative;
+  display: flex;
+  background: var(--border);
+  border-radius: 999px;
+  padding: 3px;
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 80px;
+  height: 32px;
+  border-radius: 999px;
+  background: var(--bg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: left 0.2s ease;
+  pointer-events: none;
+}
+
+.toggle-thumb.right {
+  left: 83px;
+}
+
+.toggle-label {
+  position: relative;
+  z-index: 1;
+  width: 80px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: var(--font);
+  font-weight: 500;
+  color: var(--text);
+  border-radius: 999px;
+  transition: color 0.2s ease;
+}
+
+.toggle-label.active {
+  color: var(--text-h);
+}
+
+/* Page content */
+.content {
+  width: 100%;
+  max-width: 720px;
+}
+
+.page {
+  display: block;
+  width: 100%;
+  min-height: 400px;
+}

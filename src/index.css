@@ -1,0 +1,32 @@
+:root {
+  --text: #7a7670;
+  --text-h: #1c1b19;
+  --bg: #f5f4f0;
+  --border: #dedad3;
+
+  --font: 'JetBrains Mono', ui-monospace, monospace;
+
+  font: 18px/150% var(--font);
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #8a8680;
+    --text-h: #eeece8;
+    --bg: #1a1917;
+    --border: #2e2c28;
+  }
+}
+
+#root {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
