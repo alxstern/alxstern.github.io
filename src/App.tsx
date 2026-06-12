@@ -1,4 +1,6 @@
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom'
+import About from './pages/About'
+import Projects from './pages/Projects'
 import './App.css'
 
 function Nav() {
@@ -33,8 +35,8 @@ export default function App() {
       <Nav />
       <main className="content">
         <Routes>
-          <Route path="/" element={<section className="page about" />} />
-          <Route path="/projects" element={<section className="page projects" />} />
+          <Route path="/" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </main>
     </div>

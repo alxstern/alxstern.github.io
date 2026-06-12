@@ -68,3 +68,51 @@
   width: 100%;
   min-height: 400px;
 }
+
+/* About */
+.about-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.avatar-placeholder {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 22%;
+  background: var(--border);
+}
+
+.about-name {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.about-text p {
+  margin: 0 0 12px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Projects */
+.projects-empty {
+  padding-top: 48px;
+  text-align: center;
+  color: var(--text);
+}
+
+.projects-empty-title {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: var(--text-h);
+}
+
+.projects-empty p {
+  margin: 0;
+  font-size: 14px;
+}
