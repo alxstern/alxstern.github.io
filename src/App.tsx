@@ -1,6 +1,7 @@
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom'
 import About from './pages/About'
 import Projects from './pages/Projects'
+import SocialLinks from './components/SocialLinks'
 import './App.css'
 
 function Nav() {
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </main>
+      <SocialLinks />
     </div>
   )
 }

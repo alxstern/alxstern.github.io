@@ -116,3 +116,20 @@
   margin: 0;
   font-size: 14px;
 }
+
+/* Social footer */
+.social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 48px 0 0;
+}
+
+.social-link {
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+.social-link:hover {
+  color: var(--text-h);
+}
